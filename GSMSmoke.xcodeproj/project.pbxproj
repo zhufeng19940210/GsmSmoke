@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		142D7BAB2B0D429901258103 /* libPods-GSMSmoke.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE8029C302FD2905D68B2FE /* libPods-GSMSmoke.a */; };
 		BF3ABE0C20B64FE900413F65 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3ABE0B20B64FE900413F65 /* AppDelegate.m */; };
-		BF3ABE0F20B64FE900413F65 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3ABE0E20B64FE900413F65 /* ViewController.m */; };
 		BF3ABE1220B64FE900413F65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF3ABE1020B64FE900413F65 /* Main.storyboard */; };
 		BF3ABE1420B64FE900413F65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF3ABE1320B64FE900413F65 /* Assets.xcassets */; };
 		BF3ABE1720B64FE900413F65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF3ABE1520B64FE900413F65 /* LaunchScreen.storyboard */; };
@@ -23,13 +22,12 @@
 		BF3ABE0720B64FE900413F65 /* GSMSmoke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GSMSmoke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF3ABE0A20B64FE900413F65 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BF3ABE0B20B64FE900413F65 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BF3ABE0D20B64FE900413F65 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BF3ABE0E20B64FE900413F65 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BF3ABE1120B64FE900413F65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF3ABE1320B64FE900413F65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF3ABE1620B64FE900413F65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF3ABE1820B64FE900413F65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF3ABE1920B64FE900413F65 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BF6266F720B766C800B4CB28 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,17 +72,120 @@
 		BF3ABE0920B64FE900413F65 /* GSMSmoke */ = {
 			isa = PBXGroup;
 			children = (
+				BF6266FA20B7686500B4CB28 /* Rescore */,
+				BF6266F820B7683800B4CB28 /* Category */,
+				BF6266EE20B7669200B4CB28 /* Classes */,
+				BF6266ED20B7669200B4CB28 /* Vender */,
 				BF3ABE0A20B64FE900413F65 /* AppDelegate.h */,
 				BF3ABE0B20B64FE900413F65 /* AppDelegate.m */,
-				BF3ABE0D20B64FE900413F65 /* ViewController.h */,
-				BF3ABE0E20B64FE900413F65 /* ViewController.m */,
 				BF3ABE1020B64FE900413F65 /* Main.storyboard */,
 				BF3ABE1320B64FE900413F65 /* Assets.xcassets */,
 				BF3ABE1520B64FE900413F65 /* LaunchScreen.storyboard */,
 				BF3ABE1820B64FE900413F65 /* Info.plist */,
 				BF3ABE1920B64FE900413F65 /* main.m */,
+				BF6266F720B766C800B4CB28 /* PrefixHeader.pch */,
 			);
 			path = GSMSmoke;
+			sourceTree = "<group>";
+		};
+		BF6266ED20B7669200B4CB28 /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		BF6266EE20B7669200B4CB28 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BF6266EF20B7669200B4CB28 /* Home */,
+				BF6266F320B7669200B4CB28 /* Main */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BF6266EF20B7669200B4CB28 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BF6266F020B7669200B4CB28 /* Model */,
+				BF6266F120B7669200B4CB28 /* View */,
+				BF6266F220B7669200B4CB28 /* ViewController */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BF6266F020B7669200B4CB28 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BF6266F120B7669200B4CB28 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF6266F220B7669200B4CB28 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BF6266F320B7669200B4CB28 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BF6266F420B7669200B4CB28 /* Model */,
+				BF6266F520B7669200B4CB28 /* View */,
+				BF6266F620B7669200B4CB28 /* ViewController */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		BF6266F420B7669200B4CB28 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BF6266F520B7669200B4CB28 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF6266F620B7669200B4CB28 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BF6266F820B7683800B4CB28 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				BF6266F920B7683800B4CB28 /* Rescore */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		BF6266F920B7683800B4CB28 /* Rescore */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Rescore;
+			sourceTree = "<group>";
+		};
+		BF6266FA20B7686500B4CB28 /* Rescore */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Rescore;
 			sourceTree = "<group>";
 		};
 		EECFF864CAE39C8795240925 /* Frameworks */ = {
@@ -188,7 +289,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF3ABE0F20B64FE900413F65 /* ViewController.m in Sources */,
 				BF3ABE1A20B64FE900413F65 /* main.m in Sources */,
 				BF3ABE0C20B64FE900413F65 /* AppDelegate.m in Sources */,
 			);
@@ -254,6 +354,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GSMSmoke/PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -307,6 +408,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GSMSmoke/PrefixHeader.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -327,11 +429,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3R48RV923F;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GSMSmoke/PrefixHeader.pch";
 				INFOPLIST_FILE = GSMSmoke/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bailing.GSMSmoke;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -342,11 +446,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3R48RV923F;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GSMSmoke/PrefixHeader.pch";
 				INFOPLIST_FILE = GSMSmoke/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bailing.GSMSmoke;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
