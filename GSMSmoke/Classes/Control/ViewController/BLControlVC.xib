@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BLControlVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kxI-dQ-XH1">
+                    <rect key="frame" x="0.0" y="154" width="375" height="360"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXk-ZP-4k3">
+                            <rect key="frame" x="132.5" y="10" width="110" height="110.5"/>
+                            <color key="backgroundColor" red="0.098039215690000001" green="0.72156862749999995" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="AXk-ZP-4k3" secondAttribute="height" id="Z0x-ro-Iln"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="布防">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="actionbufangBtn:" destination="-1" eventType="touchUpInside" id="l03-FG-Avq"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LmS-ZS-SOp">
+                            <rect key="frame" x="10" y="125" width="110" height="110"/>
+                            <color key="backgroundColor" red="0.098039215690000001" green="0.72156862749999995" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="LmS-ZS-SOp" secondAttribute="height" id="zUd-0D-0s8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="搜索">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="actionsearchBtn:" destination="-1" eventType="touchUpInside" id="gUh-k3-mzw"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTb-hz-Zib">
+                            <rect key="frame" x="132.5" y="239.5" width="110" height="110.5"/>
+                            <color key="backgroundColor" red="0.098039215690000001" green="0.72156862749999995" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="vTb-hz-Zib" secondAttribute="height" id="rmO-oH-AMQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="撤防">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="actionchefangBtn:" destination="-1" eventType="touchUpInside" id="E7e-ym-jT6"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29p-HP-cNF">
+                            <rect key="frame" x="255" y="125.5" width="110" height="109.5"/>
+                            <color key="backgroundColor" red="0.098039215690000001" green="0.72156862749999995" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="29p-HP-cNF" secondAttribute="height" id="0kl-bM-D7c"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="设置">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="actionsetBtn:" destination="-1" eventType="touchUpInside" id="AgR-H6-5fc"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="29p-HP-cNF" secondAttribute="trailing" constant="10" id="0eN-0x-a6C"/>
+                        <constraint firstItem="AXk-ZP-4k3" firstAttribute="top" secondItem="kxI-dQ-XH1" secondAttribute="top" constant="10" id="Df4-JQ-rov"/>
+                        <constraint firstItem="vTb-hz-Zib" firstAttribute="centerX" secondItem="kxI-dQ-XH1" secondAttribute="centerX" id="DyY-Wb-ykg"/>
+                        <constraint firstItem="LmS-ZS-SOp" firstAttribute="width" secondItem="kxI-dQ-XH1" secondAttribute="width" multiplier="110:375" id="G7R-aa-t7N"/>
+                        <constraint firstItem="29p-HP-cNF" firstAttribute="width" secondItem="kxI-dQ-XH1" secondAttribute="width" multiplier="110:375" id="NtO-3j-tkI"/>
+                        <constraint firstAttribute="width" secondItem="kxI-dQ-XH1" secondAttribute="height" multiplier="25:24" id="S0c-Cz-AHA"/>
+                        <constraint firstItem="AXk-ZP-4k3" firstAttribute="width" secondItem="kxI-dQ-XH1" secondAttribute="width" multiplier="110:375" id="WGQ-jf-2zF"/>
+                        <constraint firstItem="LmS-ZS-SOp" firstAttribute="centerY" secondItem="kxI-dQ-XH1" secondAttribute="centerY" id="fB2-kg-JaB"/>
+                        <constraint firstAttribute="bottom" secondItem="vTb-hz-Zib" secondAttribute="bottom" constant="10" id="iWa-Rw-4ue"/>
+                        <constraint firstItem="AXk-ZP-4k3" firstAttribute="centerX" secondItem="kxI-dQ-XH1" secondAttribute="centerX" id="jxy-fH-N1X"/>
+                        <constraint firstItem="29p-HP-cNF" firstAttribute="centerY" secondItem="kxI-dQ-XH1" secondAttribute="centerY" id="wYh-xA-Q6B"/>
+                        <constraint firstItem="vTb-hz-Zib" firstAttribute="width" secondItem="kxI-dQ-XH1" secondAttribute="width" multiplier="110:375" id="whA-6Q-ft9"/>
+                        <constraint firstItem="LmS-ZS-SOp" firstAttribute="leading" secondItem="kxI-dQ-XH1" secondAttribute="leading" constant="10" id="yE3-NT-6qg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="kxI-dQ-XH1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8dJ-Q1-HSS"/>
+                <constraint firstItem="kxI-dQ-XH1" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="375:667" id="rUU-TX-BAy"/>
+                <constraint firstItem="kxI-dQ-XH1" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="y03-vd-7tC"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="25.5" y="51.5"/>
+        </view>
+    </objects>
+</document>

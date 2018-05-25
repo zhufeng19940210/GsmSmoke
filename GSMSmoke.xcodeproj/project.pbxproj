@@ -13,6 +13,21 @@
 		BF3ABE1420B64FE900413F65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF3ABE1320B64FE900413F65 /* Assets.xcassets */; };
 		BF3ABE1720B64FE900413F65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF3ABE1520B64FE900413F65 /* LaunchScreen.storyboard */; };
 		BF3ABE1A20B64FE900413F65 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3ABE1920B64FE900413F65 /* main.m */; };
+		BF6266FE20B76AC800B4CB28 /* BLBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6266FD20B76AC800B4CB28 /* BLBaseVC.m */; };
+		BF62670220B76C4300B4CB28 /* BLHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62670020B76C4300B4CB28 /* BLHomeVC.m */; };
+		BF62671320B76E1700B4CB28 /* BLHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62671120B76E1700B4CB28 /* BLHomeCell.m */; };
+		BF62671420B76E1700B4CB28 /* BLHomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF62671220B76E1700B4CB28 /* BLHomeCell.xib */; };
+		BF62671820B7711100B4CB28 /* BLAddUserVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62671620B7711100B4CB28 /* BLAddUserVC.m */; };
+		BF62671920B7711100B4CB28 /* BLAddUserVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF62671720B7711100B4CB28 /* BLAddUserVC.xib */; };
+		BF62671D20B77D6600B4CB28 /* BLControlVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62671B20B77D6600B4CB28 /* BLControlVC.m */; };
+		BF62671E20B77D6600B4CB28 /* BLControlVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF62671C20B77D6600B4CB28 /* BLControlVC.xib */; };
+		BF62672120B77DEF00B4CB28 /* BLUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62672020B77DEF00B4CB28 /* BLUserModel.m */; };
+		BF62672520B7858000B4CB28 /* BLSeacrhVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62672320B7858000B4CB28 /* BLSeacrhVC.m */; };
+		BF62672620B7858000B4CB28 /* BLSeacrhVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF62672420B7858000B4CB28 /* BLSeacrhVC.xib */; };
+		BF62672A20B7859E00B4CB28 /* BLSettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62672820B7859E00B4CB28 /* BLSettingVC.m */; };
+		BF62672B20B7859E00B4CB28 /* BLSettingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF62672920B7859E00B4CB28 /* BLSettingVC.xib */; };
+		BF62672F20B78B2F00B4CB28 /* BLSeachCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62672D20B78B2F00B4CB28 /* BLSeachCell.m */; };
+		BF62673020B78B2F00B4CB28 /* BLSeachCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF62672E20B78B2F00B4CB28 /* BLSeachCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +43,30 @@
 		BF3ABE1820B64FE900413F65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF3ABE1920B64FE900413F65 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BF6266F720B766C800B4CB28 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		BF6266FC20B76AC800B4CB28 /* BLBaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLBaseVC.h; sourceTree = "<group>"; };
+		BF6266FD20B76AC800B4CB28 /* BLBaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLBaseVC.m; sourceTree = "<group>"; };
+		BF6266FF20B76C4300B4CB28 /* BLHomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLHomeVC.h; sourceTree = "<group>"; };
+		BF62670020B76C4300B4CB28 /* BLHomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLHomeVC.m; sourceTree = "<group>"; };
+		BF62671020B76E1700B4CB28 /* BLHomeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLHomeCell.h; sourceTree = "<group>"; };
+		BF62671120B76E1700B4CB28 /* BLHomeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLHomeCell.m; sourceTree = "<group>"; };
+		BF62671220B76E1700B4CB28 /* BLHomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BLHomeCell.xib; sourceTree = "<group>"; };
+		BF62671520B7711100B4CB28 /* BLAddUserVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLAddUserVC.h; sourceTree = "<group>"; };
+		BF62671620B7711100B4CB28 /* BLAddUserVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLAddUserVC.m; sourceTree = "<group>"; };
+		BF62671720B7711100B4CB28 /* BLAddUserVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BLAddUserVC.xib; sourceTree = "<group>"; };
+		BF62671A20B77D6600B4CB28 /* BLControlVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLControlVC.h; sourceTree = "<group>"; };
+		BF62671B20B77D6600B4CB28 /* BLControlVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLControlVC.m; sourceTree = "<group>"; };
+		BF62671C20B77D6600B4CB28 /* BLControlVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BLControlVC.xib; sourceTree = "<group>"; };
+		BF62671F20B77DEF00B4CB28 /* BLUserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLUserModel.h; sourceTree = "<group>"; };
+		BF62672020B77DEF00B4CB28 /* BLUserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLUserModel.m; sourceTree = "<group>"; };
+		BF62672220B7858000B4CB28 /* BLSeacrhVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLSeacrhVC.h; sourceTree = "<group>"; };
+		BF62672320B7858000B4CB28 /* BLSeacrhVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLSeacrhVC.m; sourceTree = "<group>"; };
+		BF62672420B7858000B4CB28 /* BLSeacrhVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BLSeacrhVC.xib; sourceTree = "<group>"; };
+		BF62672720B7859E00B4CB28 /* BLSettingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLSettingVC.h; sourceTree = "<group>"; };
+		BF62672820B7859E00B4CB28 /* BLSettingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLSettingVC.m; sourceTree = "<group>"; };
+		BF62672920B7859E00B4CB28 /* BLSettingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BLSettingVC.xib; sourceTree = "<group>"; };
+		BF62672C20B78B2F00B4CB28 /* BLSeachCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLSeachCell.h; sourceTree = "<group>"; };
+		BF62672D20B78B2F00B4CB28 /* BLSeachCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLSeachCell.m; sourceTree = "<group>"; };
+		BF62672E20B78B2F00B4CB28 /* BLSeachCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BLSeachCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +137,10 @@
 		BF6266EE20B7669200B4CB28 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				BF6266FB20B76A7300B4CB28 /* Base */,
 				BF6266EF20B7669200B4CB28 /* Home */,
+				BF62670820B76C8800B4CB28 /* Control */,
+				BF62670420B76C8800B4CB28 /* CURD */,
 				BF6266F320B7669200B4CB28 /* Main */,
 			);
 			path = Classes;
@@ -124,6 +166,9 @@
 		BF6266F120B7669200B4CB28 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BF62671020B76E1700B4CB28 /* BLHomeCell.h */,
+				BF62671120B76E1700B4CB28 /* BLHomeCell.m */,
+				BF62671220B76E1700B4CB28 /* BLHomeCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -131,6 +176,8 @@
 		BF6266F220B7669200B4CB28 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				BF6266FF20B76C4300B4CB28 /* BLHomeVC.h */,
+				BF62670020B76C4300B4CB28 /* BLHomeVC.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -186,6 +233,94 @@
 			children = (
 			);
 			path = Rescore;
+			sourceTree = "<group>";
+		};
+		BF6266FB20B76A7300B4CB28 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				BF6266FC20B76AC800B4CB28 /* BLBaseVC.h */,
+				BF6266FD20B76AC800B4CB28 /* BLBaseVC.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		BF62670420B76C8800B4CB28 /* CURD */ = {
+			isa = PBXGroup;
+			children = (
+				BF62670520B76C8800B4CB28 /* Model */,
+				BF62670620B76C8800B4CB28 /* View */,
+				BF62670720B76C8800B4CB28 /* ViewController */,
+			);
+			path = CURD;
+			sourceTree = "<group>";
+		};
+		BF62670520B76C8800B4CB28 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF62671F20B77DEF00B4CB28 /* BLUserModel.h */,
+				BF62672020B77DEF00B4CB28 /* BLUserModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BF62670620B76C8800B4CB28 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF62670720B76C8800B4CB28 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BF62671520B7711100B4CB28 /* BLAddUserVC.h */,
+				BF62671620B7711100B4CB28 /* BLAddUserVC.m */,
+				BF62671720B7711100B4CB28 /* BLAddUserVC.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BF62670820B76C8800B4CB28 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				BF62670920B76C8800B4CB28 /* Model */,
+				BF62670A20B76C8800B4CB28 /* View */,
+				BF62670B20B76C8800B4CB28 /* ViewController */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		BF62670920B76C8800B4CB28 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BF62670A20B76C8800B4CB28 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF62672C20B78B2F00B4CB28 /* BLSeachCell.h */,
+				BF62672D20B78B2F00B4CB28 /* BLSeachCell.m */,
+				BF62672E20B78B2F00B4CB28 /* BLSeachCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF62670B20B76C8800B4CB28 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BF62671A20B77D6600B4CB28 /* BLControlVC.h */,
+				BF62671B20B77D6600B4CB28 /* BLControlVC.m */,
+				BF62671C20B77D6600B4CB28 /* BLControlVC.xib */,
+				BF62672220B7858000B4CB28 /* BLSeacrhVC.h */,
+				BF62672320B7858000B4CB28 /* BLSeacrhVC.m */,
+				BF62672420B7858000B4CB28 /* BLSeacrhVC.xib */,
+				BF62672720B7859E00B4CB28 /* BLSettingVC.h */,
+				BF62672820B7859E00B4CB28 /* BLSettingVC.m */,
+				BF62672920B7859E00B4CB28 /* BLSettingVC.xib */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		EECFF864CAE39C8795240925 /* Frameworks */ = {
@@ -257,8 +392,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF3ABE1720B64FE900413F65 /* LaunchScreen.storyboard in Resources */,
+				BF62671420B76E1700B4CB28 /* BLHomeCell.xib in Resources */,
+				BF62671920B7711100B4CB28 /* BLAddUserVC.xib in Resources */,
 				BF3ABE1420B64FE900413F65 /* Assets.xcassets in Resources */,
+				BF62671E20B77D6600B4CB28 /* BLControlVC.xib in Resources */,
+				BF62673020B78B2F00B4CB28 /* BLSeachCell.xib in Resources */,
+				BF62672B20B7859E00B4CB28 /* BLSettingVC.xib in Resources */,
 				BF3ABE1220B64FE900413F65 /* Main.storyboard in Resources */,
+				BF62672620B7858000B4CB28 /* BLSeacrhVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,10 +431,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-GSMSmoke/Pods-GSMSmoke-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,7 +452,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF3ABE1A20B64FE900413F65 /* main.m in Sources */,
+				BF62670220B76C4300B4CB28 /* BLHomeVC.m in Sources */,
 				BF3ABE0C20B64FE900413F65 /* AppDelegate.m in Sources */,
+				BF62671320B76E1700B4CB28 /* BLHomeCell.m in Sources */,
+				BF6266FE20B76AC800B4CB28 /* BLBaseVC.m in Sources */,
+				BF62672F20B78B2F00B4CB28 /* BLSeachCell.m in Sources */,
+				BF62671820B7711100B4CB28 /* BLAddUserVC.m in Sources */,
+				BF62672120B77DEF00B4CB28 /* BLUserModel.m in Sources */,
+				BF62671D20B77D6600B4CB28 /* BLControlVC.m in Sources */,
+				BF62672520B7858000B4CB28 /* BLSeacrhVC.m in Sources */,
+				BF62672A20B7859E00B4CB28 /* BLSettingVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

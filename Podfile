@@ -7,6 +7,8 @@ target 'GSMSmoke' do
   pod 'FMDB'
   #蒙版
   pod 'SVProgressHUD'
+  # 键盘
+  pod 'IQKeyboardManager'
   # Pods for GSMSmoke
 
 end
