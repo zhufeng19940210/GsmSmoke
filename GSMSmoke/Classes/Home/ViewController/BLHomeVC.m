@@ -22,7 +22,7 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = RGB(200, 200, 200);
+    self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"用户选择";
     [self setupNavigaBar];
     [self setupTableView];
@@ -60,18 +60,18 @@
 {
     self.tableview.delegate = self;
     self.tableview.dataSource = self;
-    self.tableview.backgroundColor = [UIColor clearColor];
+    self.tableview.backgroundColor =  [UIColor clearColor];
     //注册cell
     [self.tableview registerNib:[UINib nibWithNibName:@"BLHomeCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"BLHomeCell"];
 }
 #pragma mark UITableViewDelegate | UITableViewDataSource
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 10;  //test data
+    return 1;  //test data
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return 10;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {

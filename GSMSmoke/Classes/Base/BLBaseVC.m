@@ -15,8 +15,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    self.view.backgroundColor = RGB(240, 240, 240);
     
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
     {

@@ -12,16 +12,16 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="KGk-i7-Jjw" customClass="BLSeachCell">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="BLSeachCell">
             <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="286" height="49.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3ls-tY-ChI">
                         <rect key="frame" x="15" y="12" width="25" height="25"/>
-                        <color key="backgroundColor" red="0.1215686275" green="0.67450980390000004" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="25" id="Yql-eG-KoM"/>
                             <constraint firstAttribute="width" constant="25" id="p6r-F8-mYB"/>
@@ -33,12 +33,34 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cv0-ce-rwG">
+                        <rect key="frame" x="0.0" y="49" width="320" height="0.5"/>
+                        <color key="backgroundColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="Ckl-i4-upm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="UQs-QX-b73">
+                        <rect key="frame" x="296" y="18" width="9" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="9" id="01o-cX-qYn"/>
+                            <constraint firstAttribute="height" constant="15" id="diR-2d-0lc"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="3ls-tY-ChI" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="CVf-IJ-cIJ"/>
+                    <constraint firstItem="UQs-QX-b73" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="IAM-VY-UjZ"/>
                     <constraint firstItem="ent-Et-Gmn" firstAttribute="leading" secondItem="3ls-tY-ChI" secondAttribute="trailing" constant="15" id="PZ7-c9-WR2"/>
                     <constraint firstItem="3ls-tY-ChI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="XL6-bX-1Mc"/>
+                    <constraint firstAttribute="trailing" secondItem="UQs-QX-b73" secondAttribute="trailing" constant="15" id="auH-jx-Vss"/>
                     <constraint firstItem="ent-Et-Gmn" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="bSa-0e-lY2"/>
+                    <constraint firstAttribute="trailing" secondItem="cv0-ce-rwG" secondAttribute="trailing" id="k4T-R2-dkG"/>
+                    <constraint firstItem="cv0-ce-rwG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="vRg-68-jWZ"/>
+                    <constraint firstAttribute="bottom" secondItem="cv0-ce-rwG" secondAttribute="bottom" id="xFK-Wu-W2q"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
@@ -49,4 +71,7 @@
             <point key="canvasLocation" x="22" y="51"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="arrow_right" width="9" height="15"/>
+    </resources>
 </document>
