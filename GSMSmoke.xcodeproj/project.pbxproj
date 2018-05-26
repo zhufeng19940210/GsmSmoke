@@ -28,6 +28,28 @@
 		BF62672B20B7859E00B4CB28 /* BLSettingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF62672920B7859E00B4CB28 /* BLSettingVC.xib */; };
 		BF62672F20B78B2F00B4CB28 /* BLSeachCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62672D20B78B2F00B4CB28 /* BLSeachCell.m */; };
 		BF62673020B78B2F00B4CB28 /* BLSeachCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF62672E20B78B2F00B4CB28 /* BLSeachCell.xib */; };
+		BF7639A520B8717E00FBF18F /* BLSmsAlarmVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7639A320B8717E00FBF18F /* BLSmsAlarmVC.m */; };
+		BF7639A620B8717E00FBF18F /* BLSmsAlarmVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF7639A420B8717E00FBF18F /* BLSmsAlarmVC.xib */; };
+		BF7639AE20B879A500FBF18F /* BLSwitchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7639AC20B879A400FBF18F /* BLSwitchVC.m */; };
+		BF7639AF20B879A500FBF18F /* BLSwitchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF7639AD20B879A400FBF18F /* BLSwitchVC.xib */; };
+		BF7639B320B87CBD00FBF18F /* BLSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7639B120B87CBD00FBF18F /* BLSwitchCell.m */; };
+		BF7639B420B87CBD00FBF18F /* BLSwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF7639B220B87CBD00FBF18F /* BLSwitchCell.xib */; };
+		BF7639B820B87FB800FBF18F /* BLFunctionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7639B620B87FB800FBF18F /* BLFunctionVC.m */; };
+		BF7639B920B87FB800FBF18F /* BLFunctionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF7639B720B87FB800FBF18F /* BLFunctionVC.xib */; };
+		BF7639BD20B881DD00FBF18F /* BLSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7639BB20B881DD00FBF18F /* BLSettingCell.m */; };
+		BF7639BE20B881DD00FBF18F /* BLSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF7639BC20B881DD00FBF18F /* BLSettingCell.xib */; };
+		BF7639C220B8831100FBF18F /* BLAboutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7639C020B8831100FBF18F /* BLAboutVC.m */; };
+		BF7639C320B8831100FBF18F /* BLAboutVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF7639C120B8831100FBF18F /* BLAboutVC.xib */; };
+		BF7639CC20B8856D00FBF18F /* BLPhoneAlarmVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7639CA20B8856D00FBF18F /* BLPhoneAlarmVC.m */; };
+		BF7639CD20B8856D00FBF18F /* BLPhoneAlarmVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF7639CB20B8856D00FBF18F /* BLPhoneAlarmVC.xib */; };
+		BF7639D420B8CE0500FBF18F /* ZFMyDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7639D320B8CE0500FBF18F /* ZFMyDBHelper.m */; };
+		BF7639D620B8D25E00FBF18F /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BF7639D520B8D25E00FBF18F /* libsqlite3.0.tbd */; };
+		BF7639E420B8D95100FBF18F /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7639D920B8D95100FBF18F /* FMDatabase.m */; };
+		BF7639E520B8D95100FBF18F /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7639DB20B8D95100FBF18F /* FMDatabaseAdditions.m */; };
+		BF7639E620B8D95100FBF18F /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7639DD20B8D95100FBF18F /* FMDatabasePool.m */; };
+		BF7639E720B8D95100FBF18F /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7639DF20B8D95100FBF18F /* FMDatabaseQueue.m */; };
+		BF7639E820B8D95100FBF18F /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7639E220B8D95100FBF18F /* FMResultSet.m */; };
+		BF7639E920B8D95100FBF18F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF7639E320B8D95100FBF18F /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +89,42 @@
 		BF62672C20B78B2F00B4CB28 /* BLSeachCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLSeachCell.h; sourceTree = "<group>"; };
 		BF62672D20B78B2F00B4CB28 /* BLSeachCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLSeachCell.m; sourceTree = "<group>"; };
 		BF62672E20B78B2F00B4CB28 /* BLSeachCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BLSeachCell.xib; sourceTree = "<group>"; };
+		BF7639A220B8717E00FBF18F /* BLSmsAlarmVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLSmsAlarmVC.h; sourceTree = "<group>"; };
+		BF7639A320B8717E00FBF18F /* BLSmsAlarmVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLSmsAlarmVC.m; sourceTree = "<group>"; };
+		BF7639A420B8717E00FBF18F /* BLSmsAlarmVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BLSmsAlarmVC.xib; sourceTree = "<group>"; };
+		BF7639AB20B879A400FBF18F /* BLSwitchVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLSwitchVC.h; sourceTree = "<group>"; };
+		BF7639AC20B879A400FBF18F /* BLSwitchVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLSwitchVC.m; sourceTree = "<group>"; };
+		BF7639AD20B879A400FBF18F /* BLSwitchVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BLSwitchVC.xib; sourceTree = "<group>"; };
+		BF7639B020B87CBD00FBF18F /* BLSwitchCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLSwitchCell.h; sourceTree = "<group>"; };
+		BF7639B120B87CBD00FBF18F /* BLSwitchCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLSwitchCell.m; sourceTree = "<group>"; };
+		BF7639B220B87CBD00FBF18F /* BLSwitchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BLSwitchCell.xib; sourceTree = "<group>"; };
+		BF7639B520B87FB800FBF18F /* BLFunctionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLFunctionVC.h; sourceTree = "<group>"; };
+		BF7639B620B87FB800FBF18F /* BLFunctionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLFunctionVC.m; sourceTree = "<group>"; };
+		BF7639B720B87FB800FBF18F /* BLFunctionVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BLFunctionVC.xib; sourceTree = "<group>"; };
+		BF7639BA20B881DD00FBF18F /* BLSettingCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLSettingCell.h; sourceTree = "<group>"; };
+		BF7639BB20B881DD00FBF18F /* BLSettingCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLSettingCell.m; sourceTree = "<group>"; };
+		BF7639BC20B881DD00FBF18F /* BLSettingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BLSettingCell.xib; sourceTree = "<group>"; };
+		BF7639BF20B8831100FBF18F /* BLAboutVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLAboutVC.h; sourceTree = "<group>"; };
+		BF7639C020B8831100FBF18F /* BLAboutVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLAboutVC.m; sourceTree = "<group>"; };
+		BF7639C120B8831100FBF18F /* BLAboutVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BLAboutVC.xib; sourceTree = "<group>"; };
+		BF7639C920B8856D00FBF18F /* BLPhoneAlarmVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLPhoneAlarmVC.h; sourceTree = "<group>"; };
+		BF7639CA20B8856D00FBF18F /* BLPhoneAlarmVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLPhoneAlarmVC.m; sourceTree = "<group>"; };
+		BF7639CB20B8856D00FBF18F /* BLPhoneAlarmVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BLPhoneAlarmVC.xib; sourceTree = "<group>"; };
+		BF7639D220B8CE0400FBF18F /* ZFMyDBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFMyDBHelper.h; sourceTree = "<group>"; };
+		BF7639D320B8CE0500FBF18F /* ZFMyDBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFMyDBHelper.m; sourceTree = "<group>"; };
+		BF7639D520B8D25E00FBF18F /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		BF7639D820B8D95100FBF18F /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		BF7639D920B8D95100FBF18F /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		BF7639DA20B8D95100FBF18F /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		BF7639DB20B8D95100FBF18F /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		BF7639DC20B8D95100FBF18F /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		BF7639DD20B8D95100FBF18F /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		BF7639DE20B8D95100FBF18F /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		BF7639DF20B8D95100FBF18F /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		BF7639E020B8D95100FBF18F /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		BF7639E120B8D95100FBF18F /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		BF7639E220B8D95100FBF18F /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		BF7639E320B8D95100FBF18F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF7639D620B8D25E00FBF18F /* libsqlite3.0.tbd in Frameworks */,
 				142D7BAB2B0D429901258103 /* libPods-GSMSmoke.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,6 +170,7 @@
 		BF3ABE0920B64FE900413F65 /* GSMSmoke */ = {
 			isa = PBXGroup;
 			children = (
+				BF7639CE20B887CC00FBF18F /* Common */,
 				BF6266FA20B7686500B4CB28 /* Rescore */,
 				BF6266F820B7683800B4CB28 /* Category */,
 				BF6266EE20B7669200B4CB28 /* Classes */,
@@ -130,6 +190,7 @@
 		BF6266ED20B7669200B4CB28 /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				BF7639D720B8D95100FBF18F /* FMDB */,
 			);
 			path = Vender;
 			sourceTree = "<group>";
@@ -216,16 +277,8 @@
 		BF6266F820B7683800B4CB28 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				BF6266F920B7683800B4CB28 /* Rescore */,
 			);
 			path = Category;
-			sourceTree = "<group>";
-		};
-		BF6266F920B7683800B4CB28 /* Rescore */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Rescore;
 			sourceTree = "<group>";
 		};
 		BF6266FA20B7686500B4CB28 /* Rescore */ = {
@@ -303,6 +356,12 @@
 				BF62672C20B78B2F00B4CB28 /* BLSeachCell.h */,
 				BF62672D20B78B2F00B4CB28 /* BLSeachCell.m */,
 				BF62672E20B78B2F00B4CB28 /* BLSeachCell.xib */,
+				BF7639B020B87CBD00FBF18F /* BLSwitchCell.h */,
+				BF7639B120B87CBD00FBF18F /* BLSwitchCell.m */,
+				BF7639B220B87CBD00FBF18F /* BLSwitchCell.xib */,
+				BF7639BA20B881DD00FBF18F /* BLSettingCell.h */,
+				BF7639BB20B881DD00FBF18F /* BLSettingCell.m */,
+				BF7639BC20B881DD00FBF18F /* BLSettingCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -319,13 +378,57 @@
 				BF62672720B7859E00B4CB28 /* BLSettingVC.h */,
 				BF62672820B7859E00B4CB28 /* BLSettingVC.m */,
 				BF62672920B7859E00B4CB28 /* BLSettingVC.xib */,
+				BF7639A220B8717E00FBF18F /* BLSmsAlarmVC.h */,
+				BF7639A320B8717E00FBF18F /* BLSmsAlarmVC.m */,
+				BF7639A420B8717E00FBF18F /* BLSmsAlarmVC.xib */,
+				BF7639AB20B879A400FBF18F /* BLSwitchVC.h */,
+				BF7639AC20B879A400FBF18F /* BLSwitchVC.m */,
+				BF7639AD20B879A400FBF18F /* BLSwitchVC.xib */,
+				BF7639B520B87FB800FBF18F /* BLFunctionVC.h */,
+				BF7639B620B87FB800FBF18F /* BLFunctionVC.m */,
+				BF7639B720B87FB800FBF18F /* BLFunctionVC.xib */,
+				BF7639BF20B8831100FBF18F /* BLAboutVC.h */,
+				BF7639C020B8831100FBF18F /* BLAboutVC.m */,
+				BF7639C120B8831100FBF18F /* BLAboutVC.xib */,
+				BF7639C920B8856D00FBF18F /* BLPhoneAlarmVC.h */,
+				BF7639CA20B8856D00FBF18F /* BLPhoneAlarmVC.m */,
+				BF7639CB20B8856D00FBF18F /* BLPhoneAlarmVC.xib */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BF7639CE20B887CC00FBF18F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BF7639D220B8CE0400FBF18F /* ZFMyDBHelper.h */,
+				BF7639D320B8CE0500FBF18F /* ZFMyDBHelper.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BF7639D720B8D95100FBF18F /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				BF7639D820B8D95100FBF18F /* FMDatabase.h */,
+				BF7639D920B8D95100FBF18F /* FMDatabase.m */,
+				BF7639DA20B8D95100FBF18F /* FMDatabaseAdditions.h */,
+				BF7639DB20B8D95100FBF18F /* FMDatabaseAdditions.m */,
+				BF7639DC20B8D95100FBF18F /* FMDatabasePool.h */,
+				BF7639DD20B8D95100FBF18F /* FMDatabasePool.m */,
+				BF7639DE20B8D95100FBF18F /* FMDatabaseQueue.h */,
+				BF7639DF20B8D95100FBF18F /* FMDatabaseQueue.m */,
+				BF7639E020B8D95100FBF18F /* FMDB.h */,
+				BF7639E120B8D95100FBF18F /* FMResultSet.h */,
+				BF7639E220B8D95100FBF18F /* FMResultSet.m */,
+				BF7639E320B8D95100FBF18F /* Info.plist */,
+			);
+			path = FMDB;
 			sourceTree = "<group>";
 		};
 		EECFF864CAE39C8795240925 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BF7639D520B8D25E00FBF18F /* libsqlite3.0.tbd */,
 				0AE8029C302FD2905D68B2FE /* libPods-GSMSmoke.a */,
 			);
 			name = Frameworks;
@@ -391,14 +494,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF7639AF20B879A500FBF18F /* BLSwitchVC.xib in Resources */,
+				BF7639CD20B8856D00FBF18F /* BLPhoneAlarmVC.xib in Resources */,
 				BF3ABE1720B64FE900413F65 /* LaunchScreen.storyboard in Resources */,
 				BF62671420B76E1700B4CB28 /* BLHomeCell.xib in Resources */,
 				BF62671920B7711100B4CB28 /* BLAddUserVC.xib in Resources */,
+				BF7639BE20B881DD00FBF18F /* BLSettingCell.xib in Resources */,
 				BF3ABE1420B64FE900413F65 /* Assets.xcassets in Resources */,
+				BF7639B420B87CBD00FBF18F /* BLSwitchCell.xib in Resources */,
 				BF62671E20B77D6600B4CB28 /* BLControlVC.xib in Resources */,
 				BF62673020B78B2F00B4CB28 /* BLSeachCell.xib in Resources */,
+				BF7639E920B8D95100FBF18F /* Info.plist in Resources */,
+				BF7639A620B8717E00FBF18F /* BLSmsAlarmVC.xib in Resources */,
 				BF62672B20B7859E00B4CB28 /* BLSettingVC.xib in Resources */,
+				BF7639B920B87FB800FBF18F /* BLFunctionVC.xib in Resources */,
 				BF3ABE1220B64FE900413F65 /* Main.storyboard in Resources */,
+				BF7639C320B8831100FBF18F /* BLAboutVC.xib in Resources */,
 				BF62672620B7858000B4CB28 /* BLSeacrhVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,13 +563,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF3ABE1A20B64FE900413F65 /* main.m in Sources */,
+				BF7639B320B87CBD00FBF18F /* BLSwitchCell.m in Sources */,
 				BF62670220B76C4300B4CB28 /* BLHomeVC.m in Sources */,
+				BF7639E420B8D95100FBF18F /* FMDatabase.m in Sources */,
+				BF7639AE20B879A500FBF18F /* BLSwitchVC.m in Sources */,
+				BF7639E620B8D95100FBF18F /* FMDatabasePool.m in Sources */,
+				BF7639E820B8D95100FBF18F /* FMResultSet.m in Sources */,
+				BF7639E520B8D95100FBF18F /* FMDatabaseAdditions.m in Sources */,
+				BF7639BD20B881DD00FBF18F /* BLSettingCell.m in Sources */,
 				BF3ABE0C20B64FE900413F65 /* AppDelegate.m in Sources */,
+				BF7639C220B8831100FBF18F /* BLAboutVC.m in Sources */,
 				BF62671320B76E1700B4CB28 /* BLHomeCell.m in Sources */,
+				BF7639B820B87FB800FBF18F /* BLFunctionVC.m in Sources */,
+				BF7639E720B8D95100FBF18F /* FMDatabaseQueue.m in Sources */,
 				BF6266FE20B76AC800B4CB28 /* BLBaseVC.m in Sources */,
 				BF62672F20B78B2F00B4CB28 /* BLSeachCell.m in Sources */,
 				BF62671820B7711100B4CB28 /* BLAddUserVC.m in Sources */,
 				BF62672120B77DEF00B4CB28 /* BLUserModel.m in Sources */,
+				BF7639D420B8CE0500FBF18F /* ZFMyDBHelper.m in Sources */,
+				BF7639CC20B8856D00FBF18F /* BLPhoneAlarmVC.m in Sources */,
+				BF7639A520B8717E00FBF18F /* BLSmsAlarmVC.m in Sources */,
 				BF62671D20B77D6600B4CB28 /* BLControlVC.m in Sources */,
 				BF62672520B7858000B4CB28 /* BLSeacrhVC.m in Sources */,
 				BF62672A20B7859E00B4CB28 /* BLSettingVC.m in Sources */,

@@ -30,10 +30,12 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    [self HomeRefresh];
 }
 #pragma mark 刷新界面
 -(void)HomeRefresh
 {
+    [self getAllUserData];
     [self.tableview reloadData];
 }
 
@@ -41,6 +43,8 @@
 -(void)getAllUserData
 {
     [self.dataArray removeAllObjects];
+    self.dataArray = [[ZFMyDBHelper sharaDBTool]queryAllUser];
+    NSLog(@"数量:%lu",(unsigned long)self.dataArray.count);
 }
 
 -(void)setupNavigaBar
@@ -71,7 +75,7 @@
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 10;
+    return self.dataArray.count;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -79,23 +83,11 @@
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    BLUserModel *usermodel = self.dataArray[indexPath.row];
     BLHomeCell *cell = [tableView dequeueReusableCellWithIdentifier:@"BLHomeCell"];
-    cell.phone_lab.text = @"13751102746";
+    cell.phone_lab.text = usermodel.username;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
-}
-
--(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-{
-    if (section == 0) {
-        return CGFLOAT_MIN;
-    }else{
-        return 0.5;
-    }
-}
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
-{
-    return  CGFLOAT_MIN;
 }
 //编辑的方式了
 -(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
@@ -105,23 +97,17 @@
 //编辑点击的方式了
 - (NSArray *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath{
     __weak typeof(self) WeakSelf = self;
+    BLUserModel *usermodel = [self.dataArray objectAtIndex:indexPath.row];
     //编辑事件
     UITableViewRowAction *editRowAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"编辑" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath) {
-        [WeakSelf PushEditUserWithIndex:(int)indexPath.section];
+        [WeakSelf PushEditUserWithUsermodel:usermodel];
     }];
     editRowAction.backgroundColor = [UIColor lightGrayColor];
     //删除
     UITableViewRowAction *deleteRowAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"删除" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath) {
-        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"您确定退出登录吗?" preferredStyle:UIAlertControllerStyleAlert];
-        //取消按钮
-        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
-        //确定按钮
-        UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
-            NSLog(@"删除东西");
-        }];
-        [alertController addAction:cancelAction];
-        [alertController addAction:okAction];
-        [WeakSelf presentViewController:alertController animated:YES completion:nil];
+        [[ZFMyDBHelper sharaDBTool]deleteGsmUser:usermodel];
+        [SVProgressHUD showSuccessWithStatus:@"删除成功"];
+        [WeakSelf HomeRefresh];
     }];
     deleteRowAction.backgroundColor = [UIColor redColor];
     return @[deleteRowAction,editRowAction];
@@ -129,17 +115,19 @@
 
 #pragma mark 编辑事件
 
--(void)PushEditUserWithIndex:(int)index{
+-(void)PushEditUserWithUsermodel:(BLUserModel *)usermodel{
     BLAddUserVC *editAddvc = [[BLAddUserVC alloc]init];
+    editAddvc.isEdit = YES;
+    editAddvc.usermodel = usermodel;
     [self.navigationController pushViewController:editAddvc animated:YES];
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    //BLUserModel *usermodel = self.dataArray[indexPath.section];
+    BLUserModel *usermodel = self.dataArray[indexPath.section];
     BLControlVC *controlvc = [[BLControlVC alloc]init];
-    //controlvc.usermodel = usermodel;
+    controlvc.usermodel = usermodel;
     [self.navigationController pushViewController:controlvc animated:YES];
 }
 

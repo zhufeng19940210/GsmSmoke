@@ -5,9 +5,11 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 #import <SVProgressHUD.h>
-#import <FMDatabase.h>
 #import <IQKeyboardManager.h>
 #import "BLUserModel.h"
+#import "ZFMyDBHelper.h"
+///创建表名
+#define kUser @"t_users"
 /***********国际化的东西************/
 #define _ZFLang(str)  NSLocalizedString(str,nil)
 //动态获取设备高度
