@@ -13,6 +13,7 @@
 		BF3ABE1420B64FE900413F65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF3ABE1320B64FE900413F65 /* Assets.xcassets */; };
 		BF3ABE1720B64FE900413F65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF3ABE1520B64FE900413F65 /* LaunchScreen.storyboard */; };
 		BF3ABE1A20B64FE900413F65 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3ABE1920B64FE900413F65 /* main.m */; };
+		BF4B303720BCCA530039C822 /* BLUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4B303620BCCA530039C822 /* BLUtil.m */; };
 		BF6266FE20B76AC800B4CB28 /* BLBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6266FD20B76AC800B4CB28 /* BLBaseVC.m */; };
 		BF62670220B76C4300B4CB28 /* BLHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62670020B76C4300B4CB28 /* BLHomeVC.m */; };
 		BF62671320B76E1700B4CB28 /* BLHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62671120B76E1700B4CB28 /* BLHomeCell.m */; };
@@ -44,6 +45,9 @@
 		BF7639CD20B8856D00FBF18F /* BLPhoneAlarmVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF7639CB20B8856D00FBF18F /* BLPhoneAlarmVC.xib */; };
 		BF7639D420B8CE0500FBF18F /* ZFMyDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7639D320B8CE0500FBF18F /* ZFMyDBHelper.m */; };
 		BF7639D620B8D25E00FBF18F /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BF7639D520B8D25E00FBF18F /* libsqlite3.0.tbd */; };
+		BFAD987220BCD06800E50C4A /* LZPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFAD986F20BCD06700E50C4A /* LZPickerView.xib */; };
+		BFAD987320BCD06800E50C4A /* LZPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAD987020BCD06700E50C4A /* LZPickerView.m */; };
+		BFAD987620BCD4C400E50C4A /* ZFPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAD987520BCD4C400E50C4A /* ZFPickerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +62,8 @@
 		BF3ABE1620B64FE900413F65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF3ABE1820B64FE900413F65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF3ABE1920B64FE900413F65 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BF4B303520BCCA530039C822 /* BLUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLUtil.h; sourceTree = "<group>"; };
+		BF4B303620BCCA530039C822 /* BLUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLUtil.m; sourceTree = "<group>"; };
 		BF6266F720B766C800B4CB28 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		BF6266FC20B76AC800B4CB28 /* BLBaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLBaseVC.h; sourceTree = "<group>"; };
 		BF6266FD20B76AC800B4CB28 /* BLBaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLBaseVC.m; sourceTree = "<group>"; };
@@ -107,6 +113,11 @@
 		BF7639D220B8CE0400FBF18F /* ZFMyDBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFMyDBHelper.h; sourceTree = "<group>"; };
 		BF7639D320B8CE0500FBF18F /* ZFMyDBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFMyDBHelper.m; sourceTree = "<group>"; };
 		BF7639D520B8D25E00FBF18F /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		BFAD986F20BCD06700E50C4A /* LZPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZPickerView.xib; sourceTree = "<group>"; };
+		BFAD987020BCD06700E50C4A /* LZPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZPickerView.m; sourceTree = "<group>"; };
+		BFAD987120BCD06800E50C4A /* LZPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZPickerView.h; sourceTree = "<group>"; };
+		BFAD987420BCD4C300E50C4A /* ZFPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFPickerView.h; sourceTree = "<group>"; };
+		BFAD987520BCD4C400E50C4A /* ZFPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFPickerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -383,6 +394,13 @@
 			children = (
 				BF7639D220B8CE0400FBF18F /* ZFMyDBHelper.h */,
 				BF7639D320B8CE0500FBF18F /* ZFMyDBHelper.m */,
+				BF4B303520BCCA530039C822 /* BLUtil.h */,
+				BF4B303620BCCA530039C822 /* BLUtil.m */,
+				BFAD987120BCD06800E50C4A /* LZPickerView.h */,
+				BFAD987020BCD06700E50C4A /* LZPickerView.m */,
+				BFAD986F20BCD06700E50C4A /* LZPickerView.xib */,
+				BFAD987420BCD4C300E50C4A /* ZFPickerView.h */,
+				BFAD987520BCD4C400E50C4A /* ZFPickerView.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -457,6 +475,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF7639AF20B879A500FBF18F /* BLSwitchVC.xib in Resources */,
+				BFAD987220BCD06800E50C4A /* LZPickerView.xib in Resources */,
 				BF7639CD20B8856D00FBF18F /* BLPhoneAlarmVC.xib in Resources */,
 				BF3ABE1720B64FE900413F65 /* LaunchScreen.storyboard in Resources */,
 				BF62671420B76E1700B4CB28 /* BLHomeCell.xib in Resources */,
@@ -526,8 +545,10 @@
 				BF3ABE1A20B64FE900413F65 /* main.m in Sources */,
 				BF7639B320B87CBD00FBF18F /* BLSwitchCell.m in Sources */,
 				BF62670220B76C4300B4CB28 /* BLHomeVC.m in Sources */,
+				BFAD987320BCD06800E50C4A /* LZPickerView.m in Sources */,
 				BF7639AE20B879A500FBF18F /* BLSwitchVC.m in Sources */,
 				BF7639BD20B881DD00FBF18F /* BLSettingCell.m in Sources */,
+				BFAD987620BCD4C400E50C4A /* ZFPickerView.m in Sources */,
 				BF3ABE0C20B64FE900413F65 /* AppDelegate.m in Sources */,
 				BF7639C220B8831100FBF18F /* BLAboutVC.m in Sources */,
 				BF62671320B76E1700B4CB28 /* BLHomeCell.m in Sources */,
@@ -538,6 +559,7 @@
 				BF62672120B77DEF00B4CB28 /* BLUserModel.m in Sources */,
 				BF7639D420B8CE0500FBF18F /* ZFMyDBHelper.m in Sources */,
 				BF7639CC20B8856D00FBF18F /* BLPhoneAlarmVC.m in Sources */,
+				BF4B303720BCCA530039C822 /* BLUtil.m in Sources */,
 				BF7639A520B8717E00FBF18F /* BLSmsAlarmVC.m in Sources */,
 				BF62671D20B77D6600B4CB28 /* BLControlVC.m in Sources */,
 				BF62672520B7858000B4CB28 /* BLSeacrhVC.m in Sources */,
@@ -686,7 +708,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bailing.GSMSmoke;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -703,7 +725,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bailing.GSMSmoke;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

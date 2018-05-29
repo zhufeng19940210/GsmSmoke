@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BLPhoneAlarmVC">
             <connections>
+                <outlet property="phone_tf" destination="C5f-4H-Oua" id="2uW-IQ-5v6"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -60,7 +61,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wv2-Rc-TOJ">
                     <rect key="frame" x="0.0" y="119" width="187.5" height="548"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSL-xD-SCd">
+                        <button opaque="NO" tag="61" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSL-xD-SCd">
                             <rect key="frame" x="29" y="20" width="138.5" height="40"/>
                             <color key="backgroundColor" red="0.1215686275" green="0.67450980390000004" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
@@ -76,8 +77,11 @@
                                 </userDefinedRuntimeAttribute>
                                 <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="acitonAddBtn:" destination="-1" eventType="touchUpInside" id="t2w-IC-dTc"/>
+                            </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hu-T0-SNc">
+                        <button opaque="NO" tag="62" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hu-T0-SNc">
                             <rect key="frame" x="29" y="75" width="138.5" height="40"/>
                             <color key="backgroundColor" red="0.1215686275" green="0.67450980390000004" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
@@ -93,8 +97,11 @@
                                 </userDefinedRuntimeAttribute>
                                 <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="acitonAddBtn:" destination="-1" eventType="touchUpInside" id="Tn9-Tg-aGM"/>
+                            </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X96-oA-Mdr">
+                        <button opaque="NO" tag="63" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X96-oA-Mdr">
                             <rect key="frame" x="29" y="130" width="138.5" height="40"/>
                             <color key="backgroundColor" red="0.1215686275" green="0.67450980390000004" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
@@ -110,8 +117,11 @@
                                 </userDefinedRuntimeAttribute>
                                 <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="acitonAddBtn:" destination="-1" eventType="touchUpInside" id="Tu5-8U-so0"/>
+                            </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3b-gH-ytR">
+                        <button opaque="NO" tag="64" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3b-gH-ytR">
                             <rect key="frame" x="29" y="185" width="138.5" height="40"/>
                             <color key="backgroundColor" red="0.1215686275" green="0.67450980390000004" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
@@ -127,8 +137,11 @@
                                 </userDefinedRuntimeAttribute>
                                 <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="acitonAddBtn:" destination="-1" eventType="touchUpInside" id="7Ng-Zy-Ig9"/>
+                            </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBs-Yz-efe">
+                        <button opaque="NO" tag="65" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBs-Yz-efe">
                             <rect key="frame" x="29" y="240" width="138.5" height="40"/>
                             <color key="backgroundColor" red="0.1215686275" green="0.67450980390000004" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
@@ -144,6 +157,9 @@
                                 </userDefinedRuntimeAttribute>
                                 <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="acitonAddBtn:" destination="-1" eventType="touchUpInside" id="5i1-15-aim"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -168,7 +184,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UR8-xh-0Cg">
                     <rect key="frame" x="187.5" y="119" width="187.5" height="548"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgc-df-qxp">
+                        <button opaque="NO" tag="65" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgc-df-qxp">
                             <rect key="frame" x="20" y="240" width="138.5" height="40"/>
                             <color key="backgroundColor" red="0.1215686275" green="0.67450980390000004" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
@@ -183,8 +199,11 @@
                                 </userDefinedRuntimeAttribute>
                                 <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="actionDeleteBtn:" destination="-1" eventType="touchUpInside" id="XFA-re-SVz"/>
+                            </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izu-1T-3Ih">
+                        <button opaque="NO" tag="64" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izu-1T-3Ih">
                             <rect key="frame" x="20" y="185" width="138.5" height="40"/>
                             <color key="backgroundColor" red="0.1215686275" green="0.67450980390000004" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
@@ -199,8 +218,11 @@
                                 </userDefinedRuntimeAttribute>
                                 <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="actionDeleteBtn:" destination="-1" eventType="touchUpInside" id="RSN-Wu-UMB"/>
+                            </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bM4-Y7-48g">
+                        <button opaque="NO" tag="63" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bM4-Y7-48g">
                             <rect key="frame" x="20" y="130" width="138.5" height="40"/>
                             <color key="backgroundColor" red="0.1215686275" green="0.67450980390000004" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
@@ -215,8 +237,11 @@
                                 </userDefinedRuntimeAttribute>
                                 <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="actionDeleteBtn:" destination="-1" eventType="touchUpInside" id="S8X-lQ-9my"/>
+                            </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1j-PK-WNA">
+                        <button opaque="NO" tag="62" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1j-PK-WNA">
                             <rect key="frame" x="20" y="75" width="137.5" height="40"/>
                             <color key="backgroundColor" red="0.1215686275" green="0.67450980390000004" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
@@ -231,8 +256,11 @@
                                 </userDefinedRuntimeAttribute>
                                 <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="actionDeleteBtn:" destination="-1" eventType="touchUpInside" id="MbV-LT-Jvz"/>
+                            </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMQ-0S-o7b">
+                        <button opaque="NO" tag="61" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMQ-0S-o7b">
                             <rect key="frame" x="20" y="20" width="137.5" height="40"/>
                             <color key="backgroundColor" red="0.1215686275" green="0.67450980390000004" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
@@ -247,6 +275,9 @@
                                 </userDefinedRuntimeAttribute>
                                 <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="actionDeleteBtn:" destination="-1" eventType="touchUpInside" id="wcA-0z-klU"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

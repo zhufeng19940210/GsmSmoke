@@ -20,4 +20,16 @@
 @property (nonatomic,copy) NSString *tempNumber;
 ///语言
 @property (nonatomic,copy) NSString *languae;
+///继电器开关
+@property (nonatomic,copy) NSString *jidianqiStr;
+///警笛开关
+@property (nonatomic,copy) NSString *sirenStr;
+///电源提醒
+@property (nonatomic,copy) NSString *powerStr;
+///短信回复
+@property (nonatomic,copy) NSString *smsReplaceStr;
+/// 报警时继电器触发
+@property (nonatomic,copy) NSString *alarmWitjidianqi;
+///温控报警
+@property (nonatomic,copy) NSString *tempControl;
 @end

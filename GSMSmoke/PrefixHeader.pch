@@ -6,8 +6,11 @@
 #define PrefixHeader_pch
 #import <SVProgressHUD.h>
 #import <IQKeyboardManager.h>
+#import <MessageUI/MessageUI.h>
+#import <FMDatabase.h>
 #import "BLUserModel.h"
 #import "ZFMyDBHelper.h"
+#import "BLUtil.h"
 ///创建表名
 #define kUser @"t_users"
 /***********国际化的东西************/

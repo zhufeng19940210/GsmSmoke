@@ -34,6 +34,7 @@
 {
     if (textField == self.pwd_tf) {
         if (textField.text.length > 6) {
+            [SVProgressHUD showInfoWithStatus:@"密码长度为6位"];
             UITextRange *markedRange = [textField markedTextRange];
             if (markedRange) {
                 return;
@@ -81,6 +82,12 @@
         usermodel.tempAlarmContent  = @"温度报警";
         usermodel.tempNumber = @"57";
         usermodel.languae = @"中文";
+        usermodel.jidianqiStr = @"1";
+        usermodel.sirenStr = @"0";
+        usermodel.powerStr = @"0";
+        usermodel.smsReplaceStr = @"0";
+        usermodel.alarmWitjidianqi = @"0";
+        usermodel.tempControl = @"0";
         [[ZFMyDBHelper sharaDBTool]insertGsmUser:usermodel];
         [SVProgressHUD showSuccessWithStatus:@"添加成功"];
         [self.navigationController popViewControllerAnimated:YES];

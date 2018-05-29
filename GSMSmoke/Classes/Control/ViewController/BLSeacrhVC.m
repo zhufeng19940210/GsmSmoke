@@ -5,7 +5,7 @@
 #import "BLSeacrhVC.h"
 #import "BLSeachCell.h"
 @interface BLSeacrhVC ()
-<UITableViewDelegate,UITableViewDataSource >
+<UITableViewDelegate,UITableViewDataSource,MFMessageComposeViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
 @property (nonatomic,strong)NSMutableArray *imageArray;
 @property (nonatomic,strong)NSMutableArray *titleArray;
@@ -14,14 +14,14 @@
 -(NSMutableArray *)imageArray
 {
     if(!_imageArray){
-        _imageArray = [NSMutableArray arrayWithObjects:@"user1",@"user1",@"user1",@"user1",@"user1",@"user1", nil];
+        _imageArray = [NSMutableArray arrayWithObjects:@"user1",@"user1",@"user1",@"user1",@"user1",/*@"user1",*/ nil];
     }
     return _imageArray;
 }
 -(NSMutableArray *)titleArray
 {
     if(!_titleArray){
-        _titleArray = [NSMutableArray arrayWithObjects:@"查询系统状态",@"查询系统时间",@"查询GSM信号",@"查询当前温度",@"查询报警记录",@"查询电话号码", nil];
+        _titleArray = [NSMutableArray arrayWithObjects:@"查询系统状态",@"查询系统时间",@"查询GSM信号",@"查询当前温度",@"查询报警记录",/*@"查询电话号码",*/ nil];
     }
     return _titleArray;
 }
@@ -85,22 +85,68 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if(indexPath.row == 0){
         NSLog(@"系统状态");
+        [self sendSearchCommandWithStr:@"#30#"];
     }
     if(indexPath.row == 1){
         NSLog(@"系统时间");
+        [self sendSearchCommandWithStr:@"#74#"];
     }
     if(indexPath.row == 2){
         NSLog(@"gsm信号");
+        [self sendSearchCommandWithStr:@"#33#"];
     }
     if(indexPath.row == 3){
         NSLog(@"当前温度");
+        [self sendSearchCommandWithStr:@"#79#"];
     }
     if(indexPath.row == 4){
         NSLog(@"报警记录");
+        [self sendSearchCommandWithStr:@"#32#"];
         
     }if(indexPath.row == 5){
-        NSLog(@"电话信号");
+        NSLog(@"电话信号,这个待定吧");
+        [self sendSearchCommandWithStr:@""];
     }
 }
 
+#pragma mark --发送命令的命令
+
+-(void)sendSearchCommandWithStr:(NSString *)commandStr
+{
+    NSLog(@"commndStr:%@",commandStr);
+    if ([MFMessageComposeViewController canSendText]) {
+        MFMessageComposeViewController *messageVc = [[MFMessageComposeViewController alloc]init];
+        messageVc.recipients = @[self.usermodel.username];
+        messageVc.messageComposeDelegate = self;
+        messageVc.body = [NSString stringWithFormat:@"%@%@",self.usermodel.pwd,commandStr];
+        [self presentViewController:messageVc animated:YES completion:nil];
+    }else{
+        [SVProgressHUD showInfoWithStatus:@"不能发送短信"];
+        return;
+    }
+}
+
+#pragma mark -- MFMessageComposeViewControllerDelegate代理方法
+
+- (void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult)result
+{
+    // 关闭短信界面
+    [controller dismissViewControllerAnimated:YES completion:nil];
+    
+    if (result == MessageComposeResultCancelled) {
+        //取消了
+        [SVProgressHUD showInfoWithStatus:@"发送取消"];
+        return;
+        
+    }else if (result == MessageComposeResultSent){
+        //发送成功
+        [SVProgressHUD showSuccessWithStatus:@"发送成功"];
+        return;
+        
+    }else if (result == MessageComposeResultFailed){
+        //发送失败
+        [SVProgressHUD showErrorWithStatus:@"发送失败"];
+        return;
+    }
+}
 @end
