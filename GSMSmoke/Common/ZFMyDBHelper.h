@@ -12,5 +12,5 @@
 - (void)deleteGsmUser:(BLUserModel *)userModel;
 - (NSMutableArray *)queryAllUser;
 -(BOOL)isExistingUserName:(BLUserModel *)userModel;
--(BLUserModel *)getUsermodeFromindex:(NSString *)modelIndex;
+-(BLUserModel *)getUsermodeFromindex:(BLUserModel *)userModel;
 @end

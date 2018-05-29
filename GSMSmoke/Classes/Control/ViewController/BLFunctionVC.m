@@ -51,11 +51,7 @@ ZFPicketViewDelegate>
     [self myReresh];
 }
 -(void)myReresh{
-    NSString *indexStr = [NSString stringWithFormat:@"%d",self.usermodel.index];
-    NSLog(@"indexStr:%@",indexStr);
-    self.getModel = [[ZFMyDBHelper sharaDBTool]getUsermodeFromindex:indexStr];
-    NSLog(@"self.usermodel.name:%@",self.getModel.username);
-    NSLog(@"self.usermodel.pwd:%@",self.getModel.pwd);
+    self.getModel = [[ZFMyDBHelper sharaDBTool]getUsermodeFromindex:self.usermodel];
 }
 
 - (void)viewDidLoad {

@@ -82,12 +82,12 @@
         usermodel.tempAlarmContent  = @"温度报警";
         usermodel.tempNumber = @"57";
         usermodel.languae = @"中文";
-        usermodel.jidianqiStr = @"1";
-        usermodel.sirenStr = @"0";
-        usermodel.powerStr = @"0";
-        usermodel.smsReplaceStr = @"0";
-        usermodel.alarmWitjidianqi = @"0";
-        usermodel.tempControl = @"0";
+        usermodel.jidianqiStr = @"0";
+        usermodel.sirenStr = @"1";
+        usermodel.powerStr = @"1";
+        usermodel.smsReplaceStr = @"1";
+        usermodel.alarmWitjidianqi = @"1";
+        usermodel.tempControl = @"1";
         [[ZFMyDBHelper sharaDBTool]insertGsmUser:usermodel];
         [SVProgressHUD showSuccessWithStatus:@"添加成功"];
         [self.navigationController popViewControllerAnimated:YES];

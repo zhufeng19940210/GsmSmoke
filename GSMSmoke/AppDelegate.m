@@ -25,6 +25,7 @@
     //键盘的显示
     [IQKeyboardManager sharedManager].enableAutoToolbar = YES;
     [IQKeyboardManager sharedManager].shouldResignOnTouchOutside = YES;
+    [IQKeyboardManager sharedManager].toolbarTintColor = [UIColor blackColor];
     //初始化数据
     [[ZFMyDBHelper sharaDBTool]createDataBase];
 }

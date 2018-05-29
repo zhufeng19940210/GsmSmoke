@@ -7,7 +7,7 @@
 #import "BLAddUserVC.h"
 #import "BLControlVC.h"
 @interface BLHomeVC ()
-<UITableViewDelegate,UITableViewDataSource>
+<UITableViewDelegate,UITableViewDataSource,DZNEmptyDataSetSource,DZNEmptyDataSetDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
 @property (nonatomic,strong)NSMutableArray *dataArray;
 @end
@@ -62,6 +62,8 @@
 #pragma mark seutptableview
 -(void)setupTableView
 {
+    self.tableview.emptyDataSetSource = self;
+    self.tableview.emptyDataSetDelegate = self;
     self.tableview.delegate = self;
     self.tableview.dataSource = self;
     self.tableview.backgroundColor =  [UIColor clearColor];
@@ -71,7 +73,7 @@
 #pragma mark UITableViewDelegate | UITableViewDataSource
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;  //test data
+    return 1;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -125,10 +127,76 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    BLUserModel *usermodel = self.dataArray[indexPath.section];
+    BLUserModel *usermodel = self.dataArray[indexPath.row];
     BLControlVC *controlvc = [[BLControlVC alloc]init];
     controlvc.usermodel = usermodel;
     [self.navigationController pushViewController:controlvc animated:YES];
+}
+
+- (UIImage *)imageForEmptyDataSet:(UIScrollView *)scrollView
+{
+    NSString *imageName = [NSString stringWithFormat:@"%@",@"user1"];
+    
+    return [UIImage imageNamed:imageName];
+}
+
+-(NSAttributedString *)buttonTitleForEmptyDataSet:(UIScrollView *)scrollView forState:(UIControlState)state{
+    NSString *text = nil;
+    NSString *font = nil;
+    UIColor *textColor = nil;
+    text  = @"点击添加用户";
+    textColor = MainThemeColor;
+    NSMutableDictionary *attributes = [NSMutableDictionary new];
+    if (font) {
+        [attributes setObject:font forKey:NSFontAttributeName];
+    }
+    if (textColor) {
+        [attributes setObject:textColor forKey:NSForegroundColorAttributeName];
+    }
+    return [[NSAttributedString alloc] initWithString:text attributes:attributes];
+}
+
+-(UIColor *)backgroundColorForEmptyDataSet:(UIScrollView *)scrollView
+{
+    return [UIColor whiteColor];
+}
+
+-(CGFloat)verticalOffsetForEmptyDataSet:(UIScrollView *)scrollView
+{
+    
+    return 0.0;
+}
+
+-(CGFloat)spaceHeightForEmptyDataSet:(UIScrollView *)scrollView
+{
+    return 24.0;
+}
+#pragma mark - DZNEmptyDataSetDelegate
+
+-(BOOL)emptyDataSetShouldDisplay:(UIScrollView *)scrollView
+{
+    return YES;
+}
+-(BOOL)emptyDataSetShouldAllowTouch:(UIScrollView *)scrollView
+{
+    return YES;
+}
+-(BOOL)emptyDataSetShouldAnimateImageView:(UIScrollView *)scrollView
+{
+    return YES;
+}
+-(void)emptyDataSet:(UIScrollView *)scrollView didTapView:(UIView *)view{
+    NSLog(@"didTapView的点击方式");
+}
+-(void)emptyDataSet:(UIScrollView *)scrollView didTapButton:(UIButton *)button{
+    NSLog(@"didTapButton的button的点击方式");
+    BLAddUserVC *adduservc = [[BLAddUserVC alloc]init];
+    [self.navigationController pushViewController:adduservc animated:YES];
+}
+#pragma mark - View Auto-Rotation
+-(UIInterfaceOrientationMask)supportedInterfaceOrientations{
+    
+    return UIInterfaceOrientationMaskAll;
 }
 
 - (void)didReceiveMemoryWarning {

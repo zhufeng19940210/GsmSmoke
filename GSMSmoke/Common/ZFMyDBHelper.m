@@ -25,7 +25,6 @@ static ZFMyDBHelper *instance = nil;
     // 3.打开数据库
     if ([db open]) {
         // 4.创表
-        // 4.创表
         BOOL result = [db executeUpdate:@"CREATE TABLE IF NOT EXISTS t_users (id integer PRIMARY KEY AUTOINCREMENT, username text NOT NULL, pwd text NOT NULL, smokealarm text NOT NULL,tempalarm text NOT NULL,tmepnumber text NOT NULL,laguage text NOT NULL,relay text NOT NULL,siren text NOT NULL,power text NOT NULL,sms text NOT NULL,relay_alarm text NOT NULL,temp_control text NOT NULL);"];
         if (result) {
             NSLog(@"创建t_users成功");
@@ -46,6 +45,7 @@ static ZFMyDBHelper *instance = nil;
 
 -(void)deleteGsmUser:(BLUserModel *)userModel{
     NSLog(@"usermoel.name:%@",userModel.username);
+    NSLog(@"id:%@",@(userModel.index));
     [self.db executeUpdate:@"DELETE FROM t_users WHERE id = ?;",@(userModel.index)];
 }
 
@@ -86,28 +86,26 @@ static ZFMyDBHelper *instance = nil;
 /*
  *  获取某个对象
  */
--(BLUserModel *)getUsermodeFromindex:(NSString *)modelIndex{
-    
-    NSString *sql = [NSString stringWithFormat:@"select * from t_users where id ='%@'",modelIndex];
-    FMResultSet *rs=  [self.db executeQuery:sql];
-    BLUserModel  *usermodel = [[BLUserModel alloc]init];
+-(BLUserModel *)getUsermodeFromindex:(BLUserModel *)usermodel{
+    FMResultSet *rs=  [self.db executeQuery:@"select * from t_users WHERE id = ?;",@(usermodel.index)];
+    BLUserModel  *usermodel2 = [[BLUserModel alloc]init];
     while([rs next]) {
-        usermodel.index = [rs intForColumn:@"id"];
-        usermodel.username = [rs stringForColumn:@"username"];
-        usermodel.pwd = [rs stringForColumn:@"pwd"];
-        usermodel.smokeAlarmContent = [rs stringForColumn:@"smokealarm"];
-        usermodel.tempAlarmContent = [rs stringForColumn:@"tempalarm"];
-        usermodel.tempNumber = [rs stringForColumn:@"tmepnumber"];
-        usermodel.languae = [rs stringForColumn:@"laguage"];
-        usermodel.jidianqiStr = [rs stringForColumn:@"relay"];
-        usermodel.sirenStr = [rs stringForColumn:@"siren"];
-        usermodel.powerStr = [rs stringForColumn:@"power"];
-        usermodel.smsReplaceStr = [rs stringForColumn:@"sms"];
-        usermodel.alarmWitjidianqi = [rs stringForColumn:@"relay_alarm"];
-        usermodel.tempControl = [rs  stringForColumn:@"temp_control"];
+        usermodel2.index = [rs intForColumn:@"id"];
+        usermodel2.username = [rs stringForColumn:@"username"];
+        usermodel2.pwd = [rs stringForColumn:@"pwd"];
+        usermodel2.smokeAlarmContent = [rs stringForColumn:@"smokealarm"];
+        usermodel2.tempAlarmContent = [rs stringForColumn:@"tempalarm"];
+        usermodel2.tempNumber = [rs stringForColumn:@"tmepnumber"];
+        usermodel2.languae = [rs stringForColumn:@"laguage"];
+        usermodel2.jidianqiStr = [rs stringForColumn:@"relay"];
+        usermodel2.sirenStr = [rs stringForColumn:@"siren"];
+        usermodel2.powerStr = [rs stringForColumn:@"power"];
+        usermodel2.smsReplaceStr = [rs stringForColumn:@"sms"];
+        usermodel2.alarmWitjidianqi = [rs stringForColumn:@"relay_alarm"];
+        usermodel2.tempControl = [rs  stringForColumn:@"temp_control"];
     }
     [rs close];
-    return  usermodel;
+    return  usermodel2;
 }
 
 @end
