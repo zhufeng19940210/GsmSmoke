@@ -14,14 +14,14 @@
 -(NSMutableArray *)imageArray
 {
     if(!_imageArray){
-        _imageArray = [NSMutableArray arrayWithObjects:@"user1",@"user1",@"user1",@"user1",@"user1",/*@"user1",*/ nil];
+        _imageArray = [NSMutableArray arrayWithObjects:@"user1",@"user1",@"user1",@"user1",@"user1",@"user1",@"user1", nil];
     }
     return _imageArray;
 }
 -(NSMutableArray *)titleArray
 {
     if(!_titleArray){
-        _titleArray = [NSMutableArray arrayWithObjects:@"查询系统状态",@"查询系统时间",@"查询GSM信号",@"查询当前温度",@"查询报警记录",/*@"查询电话号码",*/ nil];
+        _titleArray = [NSMutableArray arrayWithObjects:@"查询系统状态",@"查询系统时间",@"查询GSM信号",@"查询当前温度",@"查询报警记录",@"查询短信号码",@"查询报警号码", nil];
     }
     return _titleArray;
 }
@@ -104,13 +104,14 @@
         [self sendSearchCommandWithStr:@"#32#"];
         
     }if(indexPath.row == 5){
-        NSLog(@"电话信号,这个待定吧");
-        [self sendSearchCommandWithStr:@""];
+        NSLog(@"查询短信号码");
+        [self sendSearchCommandWithStr:@"#35#"];
+    }if (indexPath.row == 6){
+        NSLog(@"查询电话号码");
+        [self sendSearchCommandWithStr:@"#36#"];
     }
 }
-
 #pragma mark --发送命令的命令
-
 -(void)sendSearchCommandWithStr:(NSString *)commandStr
 {
     NSLog(@"commndStr:%@",commandStr);

@@ -30,4 +30,5 @@
 @property (nonatomic,copy) NSString *alarmWitjidianqi;
 ///温控报警
 @property (nonatomic,copy) NSString *tempControl;
+
 @end

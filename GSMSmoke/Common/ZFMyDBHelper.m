@@ -34,7 +34,6 @@ static ZFMyDBHelper *instance = nil;
     }
     self.db = db;
 }
-
 -(void)insertGsmUser:(BLUserModel *)model{
     [self.db executeUpdate:@"INSERT INTO t_users (username,pwd,smokealarm,tempalarm,tmepnumber,laguage,relay,siren,power,sms,relay_alarm,temp_control) VALUES (?,?,?,?,?,?,?,?,?,?,?,?);",model.username,model.pwd,model.smokeAlarmContent,model.tempAlarmContent,model.tempNumber,model.languae,model.jidianqiStr,model.sirenStr,model.powerStr,model.smsReplaceStr,model.alarmWitjidianqi,model.tempControl];
 }
@@ -60,7 +59,6 @@ static ZFMyDBHelper *instance = nil;
     }
     return ishave;
 }
-
 - (NSMutableArray *)queryAllUser{
     NSMutableArray *arrayM = [NSMutableArray array];
     FMResultSet *resultset = [self.db executeQuery:@"SELECT * FROM t_users"];
