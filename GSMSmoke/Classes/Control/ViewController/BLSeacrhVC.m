@@ -126,9 +126,7 @@
         return;
     }
 }
-
 #pragma mark -- MFMessageComposeViewControllerDelegate代理方法
-
 - (void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult)result
 {
     // 关闭短信界面
