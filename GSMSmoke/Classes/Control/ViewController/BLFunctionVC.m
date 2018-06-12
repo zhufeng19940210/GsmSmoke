@@ -329,17 +329,19 @@ ZFPicketViewDelegate>
     for (int i = 50; i<=70; i++) {
         [array addObject:[NSString stringWithFormat:@"%d",i]];
     }
+    
+    __weak typeof(self) weakSelf = self;
     NSLog(@"self.lanuage:%@",self.getModel.tempNumber);
     [self.lzPickerVIew lzPickerVIewType:LZPickerViewTypeSexAndHeight];
     self.lzPickerVIew.dataSource = array;
     self.lzPickerVIew.titleText = @"请设置报警温度";
     self.lzPickerVIew.selectDefault = self.getModel.tempNumber;
     self.lzPickerVIew.selectValue  = ^(NSString *value){
-        self.isSetTemp = YES;
-        self.tempStr = value;
+        weakSelf.isSetTemp = YES;
+        weakSelf.tempStr = value;
         NSString *commandStr = [NSString stringWithFormat:@"#78*%@#",value];
         NSLog(@"commandStr:%@",commandStr);
-        [self sendFunctionCommandWithStr:commandStr];
+        [weakSelf sendFunctionCommandWithStr:commandStr];
     };
     [self.lzPickerVIew show];
 }
@@ -362,14 +364,15 @@ ZFPicketViewDelegate>
 #pragma mark -- 选择语言
 -(void)setupLanguageMethod
 {
+    __weak typeof(self)weakSelf = self;
     NSLog(@"self.lanuage:%@",self.getModel.languae);
     [self.lzPickerVIew lzPickerVIewType:LZPickerViewTypeSexAndHeight];
     self.lzPickerVIew.dataSource =@[@"中文",@"英文"];
     self.lzPickerVIew.titleText = @"请选择语言";
     self.lzPickerVIew.selectDefault = self.getModel.languae;
     self.lzPickerVIew.selectValue  = ^(NSString *value){
-        self.isSetLaguage = YES;
-        self.languageStr = value;
+        weakSelf.isSetLaguage = YES;
+        weakSelf.languageStr = value;
         NSLog(@"value:%@",value);
         NSString *commandTag = nil;
         if ([value isEqualToString:@"中文"]) {
@@ -379,7 +382,7 @@ ZFPicketViewDelegate>
         }
         NSString *commandStr = [NSString stringWithFormat:@"#80*%@#",commandTag];
         NSLog(@"commandStr:%@",commandStr);
-        [self sendFunctionCommandWithStr:commandStr];
+        [weakSelf sendFunctionCommandWithStr:commandStr];
     };
     [self.lzPickerVIew show];
 }
